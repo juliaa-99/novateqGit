@@ -1,0 +1,55 @@
+// FONTS
+$font: 'TWKEverett', sans-serif;
+$font2: 'Inter', sans-serif;
+
+// PATH TO IMAGES
+$imgpath : "../img";
+
+// responsive breackpoints
+$w_mob_s:  450px;
+$w_mob:    768px;
+$w_mob_tab:    991px;
+$w_tab:    1200px;
+$w_laptop: 1500px;
+
+$w_min:    320px;
+$w_max:    2560px;
+
+
+html {
+
+    --doc-padding: 40px;
+    --doc-font-size: 14px;
+
+    --cols      : 12;
+    --gutter    : 20px;
+    --column    : calc( ( 100% - ( var(--gutter) * (var(--cols) - 1) ) ) / 12 );
+    --w-content : calc(1420px + var(--doc-padding)*2);
+
+
+    @media (max-width: $w_mob) {
+        --doc-padding: 20px;
+    }
+
+
+    // colors of project
+
+    --c-white       : #ffffff;
+    --c-black       : #1E1E1E;
+    --black-brand: #191919;
+    --c-white-brand: #F4F4F4;
+
+    --c-gray: #50504F;
+    --c-gray2: #F0F1F5;
+    --c-gray3: #F9F9FB;
+
+    --c-green         : #C3D54D;
+    --c-green-bg: #145F3B;
+
+    --c-beige: #B7B298;
+    --c-beige2: #EDEDED;
+
+    // --c-color       : #000000;
+    // --c-color_a     : #000000;
+    // --c-color_b     : #000000;
+}

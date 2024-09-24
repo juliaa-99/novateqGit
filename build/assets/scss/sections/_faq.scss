@@ -1,0 +1,97 @@
+.faq {
+	padding-top: 0;
+
+	&__banner {
+		padding-top: 200px;
+
+		text-align: center;
+
+		@media screen and (max-width: $w_mob_tab){
+			h3 {
+				font-size: 40px;
+			}
+		}
+
+		&:after {
+			content: '';
+			width: 1px;
+			height: 200px;
+			display: block;
+			margin: 60px auto 0;
+
+			background: var(--c-beige2);
+
+			@media screen and (max-width: $w_mob_tab){
+				margin-top: 40px;
+			}
+		}
+
+		&-inner {
+			width: 50%;
+			margin: auto;
+
+			@media screen and (max-width: $w_mob_tab){
+				width: 100%;
+			}
+		}
+
+		&-text {
+			margin-top: 40px;
+
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 130%;
+			letter-spacing: -0.18px;
+			text-transform: uppercase;
+
+			@media screen and (max-width: $w_mob_tab){
+				margin-top: 20px;
+			}
+		}
+	}
+
+	&__info	{
+		padding-top: 120px;
+
+		box-sizing: border-box;
+		border-top: 1px solid var(--c-beige2);
+
+		@media screen and (max-width: $w_mob_tab){
+			padding-top: 80px;
+		}
+
+		&-in {
+			width: 75%;
+			margin: auto;
+
+			@media screen and (max-width: $w_mob_tab){
+				width: 100%;
+			}
+		}
+
+		&-item {
+			& + .faq__info-item {
+				margin-top: 100px;
+
+				@media screen and (max-width: $w_mob_tab){
+					margin-top: 80px;
+				}
+			}
+		}
+
+		&-title {
+			margin-bottom: 40px;
+
+			font-size: 28px;
+			font-weight: 500;
+			line-height: 130%;
+			letter-spacing: -0.56px;
+			text-transform: uppercase;
+
+			@media screen and (max-width: $w_mob_tab){
+				font-size: 20px;
+			}
+		}
+	}
+}

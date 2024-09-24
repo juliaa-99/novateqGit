@@ -1,0 +1,54 @@
+.energo {
+	padding: 290px 0 86px;
+
+	box-sizing: border-box;
+	background: var(--c-green-bg);
+
+	@media screen and (max-width: $w_mob_tab){
+		padding: 150px 0;
+	}
+
+	&__inner {
+		text-align: center;
+	}
+
+	&__tt {
+		margin-bottom: 40px;
+
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 130%;
+		color: var(--c-green);
+		letter-spacing: -0.18px;
+		text-transform: uppercase;
+
+		@media screen and (max-width: $w_mob_tab){
+			font-size: 12px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__tx {
+		max-width: 75%;
+		margin: auto;
+		font-size: 28px;
+		font-weight: 500;
+		line-height: 130%;
+		color: var(--c-white-brand);
+		letter-spacing: -0.56px;
+		text-transform: uppercase;
+		white-space: pre-line;
+
+		@media screen and (max-width: $w_mob_tab){
+			font-size: 20px;
+		}
+	}
+
+	&__img {
+		margin-top: 108px;
+
+		@media screen and (max-width: $w_mob_tab){
+			margin-top: 50px;
+		}
+	}
+}

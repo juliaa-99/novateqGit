@@ -1,0 +1,153 @@
+.send {
+  padding-top: 0;
+
+  position: relative;
+  overflow: hidden;
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      display: block;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+
+      background: var(--black-brand);
+      opacity: 0.25;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+      object-fit: cover;
+    }
+  }
+
+  &__inner {
+    height: 100vh;
+    min-height: 750px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    position: relative;
+    z-index: 4;
+    color: var(--c-white-brand);
+
+    @media screen and (max-width: $w_mob_tab){
+      margin: 0 -20px;
+    }
+
+  }
+
+  &__top {
+    width: 50%;
+    margin: auto;
+
+    text-align: center;
+
+    @media screen and (max-width: $w_mob_tab){
+      width: 100%;
+      padding: 0 20px;
+
+      box-sizing: border-box;
+    }
+  }
+
+  &__tx {
+    width: 50%;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -0.18px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $w_mob){
+      width: 100%;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__bottom {
+    width: 75%;
+    margin: 30px auto 0;
+    padding-bottom: 40px;
+
+    box-sizing: border-box;
+    text-align: center;
+
+    .send__tx {
+      width: 67.5%;
+    }
+
+    @media screen and (max-width: $w_mob_tab){
+      width: 100%;
+      padding-bottom: 0;
+
+      .send__tx {
+        width: 100%;
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__soc {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid var(--c-beige2);
+
+    &-item {
+      flex-basis: 0;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%;
+      text-transform: uppercase;
+      color: var(--c-white-brand);
+
+      &:hover {
+        background: var(--c-beige2);
+        color: var(--black-brand);
+      }
+
+      & + .send__soc-item {
+        border-left: 1px solid var(--c-beige2);
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.garant {
+	padding-bottom: 40px;
+
+	background: var(--c-beige);
+
+	@media screen and (max-width: $w_mob_tab){
+		padding: 115px 0 70px;
+	}
+
+	h3 {
+		white-space: pre-line;
+	}
+
+	&__inner {
+
+	}
+
+	&__row {
+		display: flex;
+		border-top: 1px solid rgba(80,80,79,0.3);
+
+		@media screen and (max-width: $w_mob_tab){
+			display: block;
+			border: none;
+		}
+	}
+
+	&__cell {
+		width: 50%;
+
+		@media screen and (max-width: $w_mob_tab){
+			width: 100%;
+		}
+
+		& + .garant__cell {
+			border-left: 1px solid rgba(80,80,79,0.3);
+
+			@media screen and (max-width: $w_mob_tab){
+				border-left: none;
+				border-top: 1px solid rgba(80,80,79,0.3);
+			}
+		}
+	}
+
+	&__item {
+		padding: 90px 0;
+		box-sizing: border-box;
+		width: 50%;
+		margin: auto;
+		text-align: center;
+
+		@media screen and (max-width: $w_mob_tab){
+			padding: 40px 0;
+		}
+	}
+
+	&__tx {
+		margin-top: 40px;
+
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 140%;
+		text-transform: uppercase;
+
+		@media screen and (max-width: $w_mob_tab){
+			margin-top: 30px;
+		}
+	}
+}
